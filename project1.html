@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Bar Separate</title>
+    <style>
+        body {
+            background: #faf9f5;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 40px 0 0 0;
+        }
+        .contact-bar {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            justify-content: center;
+            margin-bottom: 32px;
+        }
+        .contact-bar-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 18px;
+            color: #2e2f49;
+            cursor: pointer;
+            transition: background 0.2s;
+            min-width: 120px;
+            justify-content: center;
+            padding: 8px 0;
+            border-radius: 6px;
+        }
+        .contact-bar-item:hover, .contact-bar-item.active {
+            background:hsl(162, 24%, 86%);
+        }
+        h1 {
+            font-family: Impact, Arial, sans-serif;
+            font-size: 50px;
+            color: #3E3F5B;
+            text-align: center;
+            margin: 0;
+        }
+        h2 {}
+    </style>
+</head>
+<body>
+    <div class="contact-bar">
+        <div class="contact-bar-item active">Home</div>
+        <div class="contact-bar-item">More</div>
+        <div class="contact-bar-item">Contact</div>
+        <div class="contact-bar-item">Setting</div>
+    </div>
+    <h1>Welcome to my website!</h1>
+</body>
+</html>
